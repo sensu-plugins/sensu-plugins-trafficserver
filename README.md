@@ -9,7 +9,7 @@
 ## Functionality
 
 ## Files
- * bin/metrics-trafficserver
+ * bin/metrics-trafficserver.rb
 
 ## Usage
 
