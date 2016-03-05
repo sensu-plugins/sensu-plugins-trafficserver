@@ -5,7 +5,6 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-trafficserver/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-trafficserver)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-trafficserver/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-trafficserver)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-trafficserver.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-trafficserver)
-[ ![Codeship Status for sensu-plugins/sensu-plugins-trafficserver](https://codeship.com/projects/f08bbd60-e89d-0132-99a9-62885e5c211b/status?branch=master)](https://codeship.com/projects/82848)
 
 ## Functionality
 

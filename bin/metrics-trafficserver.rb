@@ -59,7 +59,7 @@ class TrafficServerMetrics < Sensu::Plugin::Metric::CLI::Graphite
 
   def run
     res = Net::HTTP.start(config[:hostname], config[:port]) do |http|
-      req = Net::HTTP::Get.new("#{config[:path]}")
+      req = Net::HTTP::Get.new(config[:path].to_s)
       http.request(req)
     end
 

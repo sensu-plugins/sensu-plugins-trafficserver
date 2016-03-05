@@ -1,19 +1,33 @@
 language: ruby
 cache:
-  - bundler
+- bundler
 install:
-  - bundle install
+- bundle install
 rvm:
-  - 1.9.3
-  - 2.0
-  - 2.1
-  - 2.2
+- 1.9.3
+- 2.0
+- 2.1
+- 2.2
 notifications:
   email:
     recipients:
-      - sensu-plugin@sensu-plugins.io
+    - sensu-plugin@sensu-plugins.io
     on_success: change
     on_failure: always
-
 script:
-  - 'bundle exec rake default'
+- bundle exec rake default
+- gem build sensu-plugins-trafficserver.gemspec
+- gem install sensu-plugins-trafficserver-*.gem
+deploy:
+  provider: rubygems
+  api_key:
+    secure: nSwTlcdjhzJxcKO1R6yef+jYLH1ZZINVPHYGKFGwrVvxROOIcef3CMa10Dwe+IchuarGYl4vhSIxB/yAIiaxv8u/887lfCn3hHJYPkMQ9UTLt7W8cy8tJhNAr7+YlSChx8HyPls7oMbyuWm3rqcyY7y+evnSxb/XMuG9LsfyAOg=
+  gem: sensu-plugins-trafficserver
+  on:
+    ags: true
+    all_branches: true
+    rvm: 1.9.3
+    rvm: 2.0
+    rvm: 2.1
+    rvm: 2.2
+    repo: sensu-plugins/sensu-plugins-trafficserver
