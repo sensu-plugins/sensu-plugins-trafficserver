@@ -24,7 +24,7 @@ deploy:
     secure: nSwTlcdjhzJxcKO1R6yef+jYLH1ZZINVPHYGKFGwrVvxROOIcef3CMa10Dwe+IchuarGYl4vhSIxB/yAIiaxv8u/887lfCn3hHJYPkMQ9UTLt7W8cy8tJhNAr7+YlSChx8HyPls7oMbyuWm3rqcyY7y+evnSxb/XMuG9LsfyAOg=
   gem: sensu-plugins-trafficserver
   on:
-    ags: true
+    tags: true
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
