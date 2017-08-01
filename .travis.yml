@@ -18,12 +18,12 @@ notifications:
 script:
 - bundle exec rake default
 - gem build sensu-plugins-trafficserver.gemspec
-- gem install sensu-plugins-trafficserver-*.gem
+- gem install sensu-plugins-traffic-server-*.gem
 deploy:
   provider: rubygems
   api_key:
     secure: nSwTlcdjhzJxcKO1R6yef+jYLH1ZZINVPHYGKFGwrVvxROOIcef3CMa10Dwe+IchuarGYl4vhSIxB/yAIiaxv8u/887lfCn3hHJYPkMQ9UTLt7W8cy8tJhNAr7+YlSChx8HyPls7oMbyuWm3rqcyY7y+evnSxb/XMuG9LsfyAOg=
-  gem: sensu-plugins-trafficserver
+  gem: sensu-plugins-traffic-server
   on:
     tags: true
     all_branches: true
